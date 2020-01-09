@@ -7,9 +7,9 @@ import java.util.stream.Stream;
 
 public class UniqueMorseCodeWords804 {
 	
-    static final String[] morseCodes = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
+    final String[] morseCodes = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."};
 
-	public static int func(String[] words) {
+	public int uniqueMorseRepresentations(String[] words) {
 		Set<String> uniqMorse = new HashSet<String>();
 		Stream<String> stream = Arrays.stream(words);
 		stream.forEach(word -> {
